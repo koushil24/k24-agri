@@ -3,20 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>K_24 AGRI – Smart Farming. Stronger Karnataka.</title>
-  <meta name="description" content="K_24 AGRI helps Karnataka farmers explore crop demand, market prices and regional opportunities.">
+  <title>K_24 AGRI – Karnataka Crop Demand and Market Information</title>
+  <meta name="description" content="Explore agricultural market demand, crop prices and regional opportunities across Karnataka.">
   <link rel="icon" type="image/png" href="assets/images/k24-agri-logo.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <main class="foundation">
-    <div class="logo-badge">
-      <img src="assets/images/k24-agri-logo.png" alt="K_24 AGRI logo" class="site-logo">
+<body data-base="">
+<a class="skip-link" href="#main" data-i18n="aria.skip">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo-link" href="index.html" aria-label="K_24 AGRI home" data-i18n-aria="aria.home">
+      <span class="logo-badge"><img class="site-logo" src="assets/images/k24-agri-logo.png" alt="K_24 AGRI – Smart Farming. Stronger Karnataka." width="48" height="48"></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu" data-i18n-aria="aria.menu">&#9776;</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <ul><li><a href="index.html" data-i18n="nav.home" aria-current="page">Home</a></li><li><a href="pages/crop-demand.html" data-i18n="nav.crop-demand">Crop Demand</a></li><li><a href="pages/market-prices.html" data-i18n="nav.market-prices">Market Prices</a></li><li><a href="pages/district-explorer.html" data-i18n="nav.district-explorer">District Explorer</a></li><li><a href="pages/crop-comparison.html" data-i18n="nav.crop-comparison">Crop Comparison</a></li><li><a href="pages/learn.html" data-i18n="nav.learn">Learn</a></li><li><a href="pages/about.html" data-i18n="nav.about">About Us</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="container hero-inner">
+    <h1 id="heroTitle" data-i18n="hero.title">Make Smarter Farming Decisions.</h1>
+    <p class="lead" data-i18n="hero.lead">Explore agricultural market demand, crop prices and regional opportunities across Karnataka.</p>
+    <p class="hero-tagline" data-i18n="hero.tagline">Grow with Demand. Farm with Knowledge.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="pages/crop-demand.html" data-i18n="hero.btnDemand">Explore Crop Demand</a>
+      <a class="btn btn-outline" href="pages/market-prices.html" data-i18n="hero.btnMarkets">Explore Karnataka Markets</a>
     </div>
-    <h1>K_24 AGRI</h1>
-    <p>Phase 1 foundation is working. The logo and styles loaded correctly.</p>
-    <p class="note">Next: Phase 2 builds the full homepage.</p>
-  </main>
-  <script src="js/app.js"></script>
+  </div>
+</section>
+
+<section class="section" id="location" aria-labelledby="locTitle">
+  <div class="container">
+    <h2 class="section-title" id="locTitle" data-i18n="loc.title">Choose your location</h2>
+    <p class="section-intro" data-i18n="loc.intro">Pick your district and taluk to see what information is available for your area.</p>
+    <div class="panel">
+      <div class="location-grid">
+        <div class="field"><label for="selState" data-i18n="loc.state">State</label>
+          <select id="selState" disabled><option>Karnataka</option></select></div>
+        <div class="field"><label for="selDistrict" data-i18n="loc.district">District</label>
+          <select id="selDistrict"><option value="" data-i18n="loc.loading">Loading districts...</option></select></div>
+        <div class="field"><label for="selTaluk" data-i18n="loc.taluk">Taluk</label>
+          <select id="selTaluk" disabled><option value="" data-i18n="loc.selectTaluk">Select a taluk</option></select></div>
+        <div class="field"><label for="selMarket" data-i18n="loc.market">Village or nearby market</label>
+          <select id="selMarket" disabled><option value="" data-i18n="loc.marketNA">Not available yet</option></select></div>
+      </div>
+      <p class="helper" id="locHelper" data-i18n="loc.helper">Taluks are added district by district after checking an official source. Villages and markets will be added when verified data is connected.</p>
+      <div class="location-result" id="locResult" aria-live="polite" hidden></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="overview" aria-labelledby="ovTitle">
+  <div class="container">
+    <h2 class="section-title" id="ovTitle" data-i18n="ov.title">Agricultural market overview</h2>
+    <p class="section-intro" data-i18n="ov.intro">Live market data is not connected yet. These cards show what each section will contain.</p>
+    <p><span class="demo-badge" data-i18n="demo.label">Demonstration Data — Not Live Market Information</span></p>
+    <div class="card-grid cols-4">
+      <article class="card"><div class="card-icon" aria-hidden="true">&#8377;</div><h3 data-i18n="ov.prices">Market prices</h3><p data-i18n="ov.pricesText">Minimum, maximum and modal prices from mandis, with the source and date for each record.</p><p class="meta"><span data-i18n="ov.source">Source</span>: — &nbsp; <span data-i18n="ov.updated">Last updated</span>: —</p></article>
+      <article class="card"><div class="card-icon" aria-hidden="true">&#128200;</div><h3 data-i18n="ov.demand">Crop demand</h3><p data-i18n="ov.demandText">Demand indicators and trends, shown only where reliable data supports them.</p><p class="meta"><span data-i18n="ov.source">Source</span>: — &nbsp; <span data-i18n="ov.updated">Last updated</span>: —</p></article>
+      <article class="card"><div class="card-icon" aria-hidden="true">&#128196;</div><h3 data-i18n="ov.reports">Available market reports</h3><p data-i18n="ov.reportsText">Links to official market reports and datasets for your district.</p><p class="meta"><span data-i18n="ov.source">Source</span>: — &nbsp; <span data-i18n="ov.updated">Last updated</span>: —</p></article>
+      <article class="card"><div class="card-icon" aria-hidden="true">&#128339;</div><h3 data-i18n="ov.recent">Recently updated</h3><p data-i18n="ov.recentText">The newest records added to the platform, with their dates.</p><p class="meta"><span data-i18n="ov.source">Source</span>: — &nbsp; <span data-i18n="ov.updated">Last updated</span>: —</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="regions" aria-labelledby="regTitle">
+  <div class="container">
+    <h2 class="section-title" id="regTitle" data-i18n="reg.title">Regional agriculture</h2>
+    <p class="section-intro" data-i18n="reg.intro">Different districts grow different crops. Select a district to explore it. Verified crop and market information for each district will be added step by step.</p>
+    <div class="region-grid" id="regionGrid">
+      <a class="region-card" href="pages/district-explorer.html?district=mandya"><strong data-district="Mandya">Mandya</strong><small data-i18n="reg.demo">Demonstration region</small></a>
+      <a class="region-card" href="pages/district-explorer.html?district=mysuru"><strong data-district="Mysuru">Mysuru</strong><small data-i18n="reg.soon">Data coming soon</small></a>
+      <a class="region-card" href="pages/district-explorer.html?district=hassan"><strong data-district="Hassan">Hassan</strong><small data-i18n="reg.soon">Data coming soon</small></a>
+      <a class="region-card" href="pages/district-explorer.html?district=bengaluru-rural"><strong data-district="Bengaluru Rural">Bengaluru Rural</strong><small data-i18n="reg.soon">Data coming soon</small></a>
+      <a class="region-card" href="pages/district-explorer.html?district=tumakuru"><strong data-district="Tumakuru">Tumakuru</strong><small data-i18n="reg.soon">Data coming soon</small></a>
+      <a class="region-card" href="pages/district-explorer.html?district=belagavi"><strong data-district="Belagavi">Belagavi</strong><small data-i18n="reg.soon">Data coming soon</small></a>
+      <a class="region-card" href="pages/district-explorer.html?district=davanagere"><strong data-district="Davanagere">Davanagere</strong><small data-i18n="reg.soon">Data coming soon</small></a>
+      <a class="region-card" href="pages/district-explorer.html?district=raichur"><strong data-district="Raichur">Raichur</strong><small data-i18n="reg.soon">Data coming soon</small></a>
+      <a class="region-card" href="pages/district-explorer.html?district=kalaburagi"><strong data-district="Kalaburagi">Kalaburagi</strong><small data-i18n="reg.soon">Data coming soon</small></a>
+      <a class="region-card" href="pages/district-explorer.html?district=shivamogga"><strong data-district="Shivamogga">Shivamogga</strong><small data-i18n="reg.soon">Data coming soon</small></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how" aria-labelledby="howTitle">
+  <div class="container">
+    <h2 class="section-title" id="howTitle" data-i18n="how.title">How K_24 AGRI helps farmers</h2>
+    <ol class="steps">
+      <li><h3 data-i18n="how.s1">Select your region</h3><p data-i18n="how.s1t">Choose your district and taluk.</p></li>
+      <li><h3 data-i18n="how.s2">Explore crops and market demand</h3><p data-i18n="how.s2t">See which crops are traded and how prices have moved.</p></li>
+      <li><h3 data-i18n="how.s3">Compare available market information</h3><p data-i18n="how.s3t">Put crops side by side, with dates and sources.</p></li>
+      <li><h3 data-i18n="how.s4">Make an informed farming decision</h3><p data-i18n="how.s4t">Combine this with advice from your local agriculture office.</p></li>
+    </ol>
+    <p class="notice" data-i18n="how.notice">Market information supports decision-making. It does not guarantee profit.</p>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="logo-badge"><img class="site-logo" src="assets/images/k24-agri-logo.png" alt="K_24 AGRI logo" width="48" height="48"></span>
+        <p style="margin-top:.8rem" data-i18n="footer.about">K_24 AGRI is an independent project to help Karnataka farmers explore crop demand, prices and regional markets. It is not a government service.</p>
+      </div>
+      <div><h3 data-i18n="footer.links">Quick links</h3><ul><li><a href="index.html" data-i18n="nav.home">Home</a></li><li><a href="pages/crop-demand.html" data-i18n="nav.crop-demand">Crop Demand</a></li><li><a href="pages/market-prices.html" data-i18n="nav.market-prices">Market Prices</a></li><li><a href="pages/district-explorer.html" data-i18n="nav.district-explorer">District Explorer</a></li><li><a href="pages/crop-comparison.html" data-i18n="nav.crop-comparison">Crop Comparison</a></li><li><a href="pages/learn.html" data-i18n="nav.learn">Learn</a></li><li><a href="pages/about.html" data-i18n="nav.about">About Us</a></li></ul></div>
+      <div><h3 data-i18n="footer.sources">Data sources</h3>
+        <p data-i18n="footer.sourcesText">Planned sources, not yet connected:</p>
+        <ul>
+          <li><a href="https://agmarknet.gov.in/" target="_blank" rel="noopener">AGMARKNET</a></li>
+          <li><a href="https://enam.gov.in/" target="_blank" rel="noopener">eNAM</a></li>
+          <li><a href="https://icar.org.in/" target="_blank" rel="noopener">ICAR</a></li>
+          <li><a href="https://www.karnataka.gov.in/" target="_blank" rel="noopener">Karnataka Government</a></li>
+        </ul>
+      </div>
+      <div><h3 data-i18n="footer.limits">Limits and disclaimer</h3>
+        <p data-i18n="footer.limitsText">Market information supports decisions but does not guarantee profit. Sample data is always labelled. Check with your local agriculture office before changing crops.</p>
+        <h3 data-i18n="footer.contact">Contact</h3>
+        <p data-i18n="footer.contactText">Contact details will be added here.</p>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 K_24 AGRI. <span data-i18n="footer.rights">All rights reserved.</span></p>
+  </div>
+</footer>
+<script src="js/translations.js"></script>
+<script src="js/app.js"></script>
+<script src="js/districts.js"></script>
 </body>
 </html>

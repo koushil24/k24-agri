@@ -1,1 +1,262 @@
-[]
+{
+ "_note": "Names only. Taluks are filled in district by district after checking an official source. An empty taluks list means taluk data is not added yet.",
+ "state": {
+  "en": "Karnataka",
+  "kn": "ಕರ್ನಾಟಕ"
+ },
+ "districts": [
+  {
+   "id": "bagalkot",
+   "en": "Bagalkot",
+   "kn": "ಬಾಗಲಕೋಟೆ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "ballari",
+   "en": "Ballari",
+   "kn": "ಬಳ್ಳಾರಿ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "belagavi",
+   "en": "Belagavi",
+   "kn": "ಬೆಳಗಾವಿ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "bengaluru-rural",
+   "en": "Bengaluru Rural",
+   "kn": "ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "bengaluru-urban",
+   "en": "Bengaluru Urban",
+   "kn": "ಬೆಂಗಳೂರು ನಗರ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "bidar",
+   "en": "Bidar",
+   "kn": "ಬೀದರ್",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "chamarajanagar",
+   "en": "Chamarajanagar",
+   "kn": "ಚಾಮರಾಜನಗರ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "chikkaballapura",
+   "en": "Chikkaballapura",
+   "kn": "ಚಿಕ್ಕಬಳ್ಳಾಪುರ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "chikkamagaluru",
+   "en": "Chikkamagaluru",
+   "kn": "ಚಿಕ್ಕಮಗಳೂರು",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "chitradurga",
+   "en": "Chitradurga",
+   "kn": "ಚಿತ್ರದುರ್ಗ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "dakshina-kannada",
+   "en": "Dakshina Kannada",
+   "kn": "ದಕ್ಷಿಣ ಕನ್ನಡ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "davanagere",
+   "en": "Davanagere",
+   "kn": "ದಾವಣಗೆರೆ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "dharwad",
+   "en": "Dharwad",
+   "kn": "ಧಾರವಾಡ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "gadag",
+   "en": "Gadag",
+   "kn": "ಗದಗ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "hassan",
+   "en": "Hassan",
+   "kn": "ಹಾಸನ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "haveri",
+   "en": "Haveri",
+   "kn": "ಹಾವೇರಿ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "kalaburagi",
+   "en": "Kalaburagi",
+   "kn": "ಕಲಬುರಗಿ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "kodagu",
+   "en": "Kodagu",
+   "kn": "ಕೊಡಗು",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "kolar",
+   "en": "Kolar",
+   "kn": "ಕೋಲಾರ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "koppal",
+   "en": "Koppal",
+   "kn": "ಕೊಪ್ಪಳ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "mandya",
+   "en": "Mandya",
+   "kn": "ಮಂಡ್ಯ",
+   "demo": true,
+   "taluks": [
+    {
+     "id": "krishnarajpet",
+     "en": "Krishnarajpet",
+     "kn": "ಕೃಷ್ಣರಾಜಪೇಟೆ"
+    },
+    {
+     "id": "maddur",
+     "en": "Maddur",
+     "kn": "ಮದ್ದೂರು"
+    },
+    {
+     "id": "malavalli",
+     "en": "Malavalli",
+     "kn": "ಮಳವಳ್ಳಿ"
+    },
+    {
+     "id": "mandya",
+     "en": "Mandya",
+     "kn": "ಮಂಡ್ಯ"
+    },
+    {
+     "id": "nagamangala",
+     "en": "Nagamangala",
+     "kn": "ನಾಗಮಂಗಲ"
+    },
+    {
+     "id": "pandavapura",
+     "en": "Pandavapura",
+     "kn": "ಪಾಂಡವಪುರ"
+    },
+    {
+     "id": "srirangapatna",
+     "en": "Srirangapatna",
+     "kn": "ಶ್ರೀರಂಗಪಟ್ಟಣ"
+    }
+   ]
+  },
+  {
+   "id": "mysuru",
+   "en": "Mysuru",
+   "kn": "ಮೈಸೂರು",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "raichur",
+   "en": "Raichur",
+   "kn": "ರಾಯಚೂರು",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "ramanagara",
+   "en": "Ramanagara",
+   "kn": "ರಾಮನಗರ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "shivamogga",
+   "en": "Shivamogga",
+   "kn": "ಶಿವಮೊಗ್ಗ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "tumakuru",
+   "en": "Tumakuru",
+   "kn": "ತುಮಕೂರು",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "udupi",
+   "en": "Udupi",
+   "kn": "ಉಡುಪಿ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "uttara-kannada",
+   "en": "Uttara Kannada",
+   "kn": "ಉತ್ತರ ಕನ್ನಡ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "vijayanagara",
+   "en": "Vijayanagara",
+   "kn": "ವಿಜಯನಗರ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "vijayapura",
+   "en": "Vijayapura",
+   "kn": "ವಿಜಯಪುರ",
+   "demo": false,
+   "taluks": []
+  },
+  {
+   "id": "yadgir",
+   "en": "Yadgir",
+   "kn": "ಯಾದಗಿರಿ",
+   "demo": false,
+   "taluks": []
+  }
+ ]
+}
