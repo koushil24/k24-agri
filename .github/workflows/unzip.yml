@@ -1,0 +1,34 @@
+name: Unzip uploaded zip
+
+on:
+  push:
+    paths:
+      - '*.zip'
+
+permissions:
+  contents: write
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unzip and apply
+        run: |
+          set -e
+          for z in *.zip; do
+            [ -f "$z" ] || continue
+            rm -rf /tmp/u && mkdir /tmp/u
+            unzip -q "$z" -d /tmp/u
+            src=/tmp/u
+            if [ "$(ls -A /tmp/u | wc -l)" -eq 1 ] && [ -d "/tmp/u/$(ls -A /tmp/u)" ]; then
+              src="/tmp/u/$(ls -A /tmp/u)"
+            fi
+            cp -a "$src"/. .
+            rm "$z"
+          done
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Update site from uploaded zip" || exit 0
+          git push
